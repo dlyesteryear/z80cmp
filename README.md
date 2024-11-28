@@ -7,7 +7,7 @@ When comparing binaries of different versions of the same program, analyzing dif
 
 To address this, z80cmp.py generates disassembly with consistent labels shared across multiple files. By harmonizing the labels and formatting the disassembly, this utility allows meaningful diffs that highlight only actual changes in the code logic or structure, ignoring irrelevant differences like address shifts.
 
-##Features
+## Features
 - Generates disassembly with shared labels for easy comparison.
 - Facilitates meaningful diffs by eliminating spurious differences caused by address shifts.
 - Supports pairwise comparisons of multiple binaries.
@@ -29,8 +29,11 @@ Options:
   --align          Align rows in the outputs so that matching code is located at the same line in the file.
 
 ```
+# Todo
+- data/code separation
 
-# Show Your Support
+
+## Show Your Support
 
 <a href='https://ko-fi.com/R6R31177HE' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a> if you want to support further development!
 
