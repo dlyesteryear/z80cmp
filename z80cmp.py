@@ -44,7 +44,8 @@ def get_role(d):
         mark = markings[optype]
         if mark[0] is None:
             for j in range(1, len(mark)):
-                role[i+j] = mark[j]
+                if (i+j) < len(d):
+                    role[i+j] = mark[j]
             # lab = f"{dec}".ljust(10)
             # print(f"  {lab} ;{addr:04x}")
             disasm[addr] = DisasmData(dec, optype, i)
